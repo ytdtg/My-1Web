@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Trinidad Benguet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.8rem;
+      width: auto;
+    }
+
+    .navbar-brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .arch {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-left: 2%;
+      margin-bottom: 2%;
+    }
+
+    .containers {
+      font-size: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 2% 5%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .card {
+      border: 2px solid #333;
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+
+    .card-img-wrapper {
+      padding: 5%;
+    }
+
+    .card-img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      border-radius: 8px;
+      display: block;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .card-body {
+      padding: 0 5% 5% 5%;
+      text-align: left;
+    }
+
+    .buton {
+      background-color: #51CFEB;
+      border: 2px solid black;
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+   /* Mobile */
+    @media (max-width: 480px) {
+      .containers { grid-template-columns: 1fr; }
+      .navbar-brand { font-size: 1rem; }
+      h1 { font-size: 1.5rem; }
+    }
+ 
+    /* Tablets */
+    @media (min-width: 481px) and (max-width: 1200px) {
+      .containers { grid-template-columns: repeat(2, 1fr); }
+      .navbar-brand { font-size: 1.2rem; }
+      h1 { font-size: 2rem; }
+    }
+ 
+    /* Laptops */
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      .containers { grid-template-columns: repeat(3, 1fr); }
+      .navbar-brand { font-size: 1.5rem; }
+      h1 { font-size: 2.5rem; }
+    }
+ 
+    /* Desktops */
+    @media (min-width: 1601px) {
+      .containers { grid-template-columns: repeat(3, 1fr); }
+      .navbar-brand { font-size: 1.8rem; }
+      h1 { font-size: 2.5rem; }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center py-3">
+    <a class="navbar-brand">
+      <img src="./Assets/logo.png" alt="Logo">
+      La Trinidad Benguet
+    </a>
+  </div>
+
+  <div class="arch">
+    <img src="./Assets/arch.png" style="width: 90%;">
+  </div>
+
+  <h1>Explore La Trinidad</h1>
+
+  <div class="containers">
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="strawberry.html"><img src="./Assets/strawberry.png" class="card-img" alt="Strawberry Farm"></a>
+      </div>
+      <div class="card-body">
+        <a href="strawberry.html" class="buton">Strawberry Farm</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="valeyOfColors.html"><img src="./Assets/valley of colors.png" class="card-img"
+            alt="Valley of Colors"></a>
+      </div>
+      <div class="card-body">
+        <a href="valeyOfColors.html" class="buton">Valley of Colors</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="MtKalugong.html"><img src="./Assets/kalugong.jpg" class="card-img" alt="Mt. Kalugong"></a>
+      </div>
+      <div class="card-body">
+        <a href="MtKalugong.html" class="buton">Mt. Kalugong</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="valleywood.html"><img src="./Assets/valleywood.png" class="card-img" alt="Valleywood"></a>
+      </div>
+      <div class="card-body">
+        <a href="valleywood.html" class="buton">Valleywood</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="binangaFalls.html"><img src="./Assets/binanga.png" class="card-img" alt="Binanga Falls"></a>
+      </div>
+      <div class="card-body">
+        <a href="binangaFalls.html" class="buton">Binanga Falls</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="Mt.Costa.html"><img src="./Assets/costa.png" class="card-img" alt="Mt. Costa"></a>
+      </div>
+      <div class="card-body">
+        <a href="Mt.Costa.html" class="buton">Mt. Costa</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="MtYangbew.html"><img src="./Assets/yangbew.png" class="card-img" alt="Mt. Yangbew"></a>
+      </div>
+      <div class="card-body">
+        <a href="MtYangbew.html" class="buton">Mt. Yangbew</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrapper">
+        <a href="payogpogFalls.html"><img src="./Assets/payogpog.png" class="card-img" alt="Payogpog Falls"></a>
+      </div>
+      <div class="card-body">
+        <a href="payogpogFalls.html" class="buton">Payogpog Falls</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
